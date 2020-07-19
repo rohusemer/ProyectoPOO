@@ -11,6 +11,7 @@ import EntidadesInmobiliaria.Etapa;
 import EntidadesInmobiliaria.Inmobiliaria;
 import EntidadesInmobiliaria.Lotes;
 import Edificio.Modelo;
+import EntidadesInmobiliaria.MostrarDatos;
 import EntidadesInmobiliaria.Urbanizacion;
 import Persona.Usuario;
 import java.util.ArrayList;
@@ -262,7 +263,7 @@ public class Validaciones {
     public static void validaUrbani(String nombre){
         for(Urbanizacion ur: Inmobiliaria.urbanizaciones){
             if(ur.getNombreUrbanizacion().equalsIgnoreCase(nombre)){
-                ur.mostrarDatosEtapa();
+                // ur.mostrarDatosEtapa();
             } else{ System.out.println("No hay Urbanizaciones con ese Nombre");}
         }
     }
