@@ -3,8 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package EntidadesInmobiliaria;
+package Validacion;
 
+import Edificio.Casa;
+import Edificio.Departamento;
+import EntidadesInmobiliaria.Etapa;
+import EntidadesInmobiliaria.Inmobiliaria;
+import EntidadesInmobiliaria.Lotes;
+import Edificio.Modelo;
+import EntidadesInmobiliaria.Urbanizacion;
 import Persona.Usuario;
 import java.util.ArrayList;
 import java.util.List;
@@ -182,7 +189,8 @@ public class Validaciones {
      * @param nombreUsuario nombreUsuario
      * @return lista de usuarios
      */
-    public static List<Usuario> validarNombreUsuario(String nombreUsuario) {
+    
+     public static List<Usuario> validarNombreUsuario(String nombreUsuario) {
         nombreUsuario = nombreUsuario.toUpperCase();
         List<Usuario> lu = new ArrayList<>();
         boolean opcion = false;
@@ -223,13 +231,6 @@ public class Validaciones {
         return null;
     }
     
-    /**
-     * Metodo que enviar un correo al usuario registrado
-     *
-     * @param correoReceptor correoReceptor
-     * @param mensaje  mensaje
-     * @return String correoReceptor
-     */
     public static String enviarCorreo(String correoReceptor, String mensaje) {
 
         boolean opcion = false;
@@ -284,7 +285,6 @@ public class Validaciones {
         Usuario u = Validaciones.validarContrasenaUsuario(lu, contrasena);
         return u;
     }
-     
     public static String validaNombreModelo(String palabra) {
         palabra = palabra.toUpperCase();
         while (!(palabra.equals("CASA") | palabra.equals("DEPARTAMENTO"))) {

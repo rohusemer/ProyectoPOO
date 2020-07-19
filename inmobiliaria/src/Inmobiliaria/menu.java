@@ -6,15 +6,15 @@
 package Inmobiliaria;
 
 import Persona.Administrador;
-import EntidadesInmobiliaria.Casa;
-import EntidadesInmobiliaria.Departamento;
+import Edificio.Casa;
+import Edificio.Departamento;
 import EntidadesInmobiliaria.Etapa;
 import EntidadesInmobiliaria.Inmobiliaria;
 import EntidadesInmobiliaria.Lotes;
-import EntidadesInmobiliaria.Modelo;
+import Edificio.Modelo;
 import EntidadesInmobiliaria.Urbanizacion;
 import Persona.Usuario;
-import EntidadesInmobiliaria.Validaciones;
+import Validacion.Validaciones;
 import Persona.Vendedor;
 import java.util.List;
 import java.util.Scanner;
