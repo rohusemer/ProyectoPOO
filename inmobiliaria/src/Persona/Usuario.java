@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package EntidadesInmobiliaria;
+package Persona;
 
 /**
  *
  * @author Ronny Segura
  */
-public class Usuario {
+public abstract class Usuario {
     protected String nombre;
     protected String correoElectronico;
     protected String contrasena;

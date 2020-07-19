@@ -5,7 +5,7 @@
  */
 package Inmobiliaria;
 
-import EntidadesInmobiliaria.Administrador;
+import Persona.Administrador;
 import EntidadesInmobiliaria.Casa;
 import EntidadesInmobiliaria.Departamento;
 import EntidadesInmobiliaria.Etapa;
@@ -13,9 +13,9 @@ import EntidadesInmobiliaria.Inmobiliaria;
 import EntidadesInmobiliaria.Lotes;
 import EntidadesInmobiliaria.Modelo;
 import EntidadesInmobiliaria.Urbanizacion;
-import EntidadesInmobiliaria.Usuario;
+import Persona.Usuario;
 import EntidadesInmobiliaria.Validaciones;
-import EntidadesInmobiliaria.Vendedor;
+import Persona.Vendedor;
 import java.util.List;
 import java.util.Scanner;
 import javafx.scene.image.ImageView;

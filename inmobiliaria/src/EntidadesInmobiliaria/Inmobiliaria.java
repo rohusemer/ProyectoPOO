@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package EntidadesInmobiliaria;
+import Persona.Usuario;
 import java.io.File;
 import java.io.PrintWriter;
 import java.io.IOException;
