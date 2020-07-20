@@ -30,6 +30,8 @@ public class Inmobiliaria {
     public static List<Lotes> lotes = new ArrayList<>();
     
     public static List<Etapa> etapas = new ArrayList<>();
+    
+    private int numero = 0;
 
     public static void añadirEtapa(Etapa etapa){
         etapas.add(etapa);
@@ -359,9 +361,19 @@ public class Inmobiliaria {
                 linea = new PrintWriter(escribir); 
                 linea.println("Codigo: "+codigo + "      Nombre de Urbanizacion: "+nombre + "     Direccion: "+direccion);
                 escribir.close();
-            } catch (Exception e){e.printStackTrace();}
-            
+            } catch (Exception e){e.printStackTrace();}   
+    }
+    
+     public int consultarLotesporManzana(int manzana){
         
+        for (Lotes l1 : lotes) {
+            if (l1.getManzana()==(manzana)) {
+                return numero+=numero;
+            }else{
+                System.out.println("Numero de manzana Incorrecto");
+            }
+        }
+        return 0;  
     }
 }
 

@@ -22,7 +22,7 @@ public class Etapa {
     protected List<Lotes> lotes1 = new ArrayList<>();
 
     private int codigo;
-    private int numero = 0;
+    //private int numero = 0;
     public Etapa(String NombreEtapa, String estadoVendido, int manzana) {
         this.NombreEtapa = NombreEtapa;
         this.estadoVendido = estadoVendido;
@@ -112,17 +112,17 @@ public class Etapa {
     public void AgregarLotes (Lotes lotes){
         lotes1.add (lotes);
     }
-    public int consultarLotesporManzana(int manzana){
-        
-        for (Lotes l1 : lotes1) {
-            if (l1.getManzana()==(manzana)) {
-                return numero+=numero;
-            }else{
-                System.out.println("Numero de manzana Incorrecto");
-            }
-        }
-        return 0;  
-    }
+//    public int consultarLotesporManzana(int manzana){
+//        
+//        for (Lotes l1 : lotes1) {
+//            if (l1.getManzana()==(manzana)) {
+//                return numero+=numero;
+//            }else{
+//                System.out.println("Numero de manzana Incorrecto");
+//            }
+//        }
+//        return 0;  
+//    }
    
     // metodo que devuelva el valor de los departamentos
     
@@ -132,8 +132,8 @@ public class Etapa {
                "codigo: " + codigo +"\n"+
                "NombreEtapa: " + NombreEtapa +"\n"+ 
                "EstadoVendido=" + estadoVendido +"\n"+
-               "Manzana=" + manzana  +"\n"+
-               "Numero de lotes por manzana: " + numero +"\n";
+               "Manzana=" + manzana  +"\n";
+//               "Numero de lotes por manzana: " + numero +"\n";
     }
       
     
